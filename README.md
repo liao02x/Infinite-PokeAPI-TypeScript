@@ -1,19 +1,13 @@
-# Infinite-PokeAPI-TypeScript
+# Infinite-PokeAPI-TypeScript showcase
 
 This project demonstrates an implementation of an infinite scroll list of Pokémon using TypeScript and the [PokeAPI](https://pokeapi.co/). The goal is to build the infinite scroll mechanism from scratch and paginate the API requests.
 
-## Requirements
+## Features
 
 - Implement infinite scroll from scratch
 - Paginate API requests
 - Load more Pokémon as the user scrolls to the bottom of the list
-- Add any libraries as needed, except those that already implement infinite-scroll
-
-## Recommendations
-
 - Utilize custom hooks for better code organization
-- Define types for all components and data structures
-- Write clear and concise comments to explain complex logic or functionality
 
 ## PokeAPI
 
@@ -30,20 +24,11 @@ $ yarn dev
 
 Open http://localhost:3000 to view the project in the browser.
 
-## Development Tips
-
-- Update App.tsx and any other relevant files to implement the infinite scroll functionality
-- Consider creating a custom hook to handle the logic for fetching data and managing the scroll state
-- Be mindful of performance and avoid unnecessary re-renders
-
 ## Project Structure
 
 This project was bootstrapped with [Vite](https://vitejs.dev/), a build tool and development server for lightning-fast development and optimized production builds.
 
-For more information about Vite and its features, visit the [official documentation](https://vitejs.dev/guide/).
-
-## My Solution
-
-`hooks.ts` containes the custom hooks for supporting the infinite scroll feature with support from Intersection Observer Web API. The list compoents is refactored into InfiniteScrollList component and use with the `useInfiniteLoading` hook.
+`hooks.ts` contains the custom hooks for supporting the infinite scroll feature with support from Intersection Observer Web API. The list component is using InfiniteScrollList component and uses the `useInfiniteLoading` hook.
 
 The Intersection Observer Web API has 96%+ support in modern browsers according to caniuse.com. If we are targeting older browsers, we can use a polyfill.
+
